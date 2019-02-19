@@ -1,6 +1,6 @@
 <template>
   <div class="datetimepicker-inline" v-if="config.inline"></div>
-  <input type="text" class="form-control" v-else>
+  <input type="text" class="form-control" :placeholder="placeholder" v-else>
 </template>
 
 <script>
@@ -35,6 +35,11 @@
         type: Boolean,
         default: false
       },
+
+      placeholder: {
+        type: String,
+        default: ''
+      }
     },
     data() {
       return {
