@@ -1,6 +1,6 @@
 <template>
-  <div class="datetimepicker-inline" v-if="config.inline"></div>
-  <input type="text" class="form-control" :placeholder="placeholder" v-else>
+  <input type="text" class="form-control" :placeholder="placeholder" v-if="!config.inline">
+  <div class="datetimepicker-inline" v-else></div>
 </template>
 
 <script>
@@ -25,9 +25,7 @@
       // http://eonasdan.github.io/bootstrap-datetimepicker/Options/
       config: {
         type: Object,
-        default: () => ({
-          inline: true,
-        })
+        default: () => ({})
       },
       /**
        * You can set this to true when component is wrapped in input-group
