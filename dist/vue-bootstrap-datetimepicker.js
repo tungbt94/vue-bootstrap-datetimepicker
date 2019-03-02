@@ -119,12 +119,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/component.vue?vue&type=template&id=21d135ae&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/component.vue?vue&type=template&id=69a60fc4&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.config.inline)?_c('div',{staticClass:"datetimepicker-inline"}):_c('input',{staticClass:"form-control",attrs:{"type":"text","placeholder":_vm.placeholder}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/component.vue?vue&type=template&id=21d135ae&
+// CONCATENATED MODULE: ./src/component.vue?vue&type=template&id=69a60fc4&
 
 // EXTERNAL MODULE: external {"commonjs":"jquery","commonjs2":"jquery","amd":"jquery","root":"jQuery"}
 var external_commonjs_jquery_commonjs2_jquery_amd_jquery_root_jQuery_ = __webpack_require__(0);
@@ -170,7 +170,9 @@ var external_pc_bootstrap4_datetimepicker_ = __webpack_require__(2);
     config: {
       type: Object,
       default: function _default() {
-        return {};
+        return {
+          inline: true
+        };
       }
     },
     /**

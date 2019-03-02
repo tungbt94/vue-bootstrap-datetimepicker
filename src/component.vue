@@ -25,7 +25,9 @@
       // http://eonasdan.github.io/bootstrap-datetimepicker/Options/
       config: {
         type: Object,
-        default: () => ({})
+        default: () => ({
+          inline: true,
+        })
       },
       /**
        * You can set this to true when component is wrapped in input-group
